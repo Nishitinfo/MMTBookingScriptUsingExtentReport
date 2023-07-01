@@ -90,7 +90,26 @@
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
         </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -131,10 +150,10 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                     <configuration>
-<!--                        <systemPropertyVariables>-->
-<!--                            <extent.reporter.spark.start>true</extent.reporter.spark.start>-->
-<!--                            <extent.reporter.spark.out>test-output/SparkReport/Spark.html</extent.reporter.spark.out>-->
-<!--                        </systemPropertyVariables>-->
+                        <systemPropertyVariables>
+                            <extent.reporter.spark.start>true</extent.reporter.spark.start>
+                            <extent.reporter.spark.out>test-output/SparkReport/Spark.html</extent.reporter.spark.out>
+                        </systemPropertyVariables>
                     </configuration>
                 </plugin>
             </plugins>

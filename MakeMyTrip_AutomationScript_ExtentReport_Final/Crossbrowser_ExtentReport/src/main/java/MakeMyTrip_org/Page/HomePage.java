@@ -37,8 +37,8 @@ public class HomePage extends Utils {
 
     public void enterTripData() {
         sleep(3);
-        driver.switchTo().frame(1); // Switching to OuterFrame
-        clickOnElement(popupClose);
+//        driver.switchTo().frame(1); // Switching to OuterFrame
+//        clickOnElement(popupClose);
         clickOnElement(selectRoundTrip);
         clickOnElement(selectCityDropdown);
         enterText(searchCity, "Mumbai");

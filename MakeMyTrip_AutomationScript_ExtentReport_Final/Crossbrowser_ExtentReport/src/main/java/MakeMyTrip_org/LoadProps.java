@@ -11,7 +11,7 @@ public class LoadProps {
         FileInputStream input;
 
         try {
-            input = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//TestData//TestConfig.properties");
+            input = new FileInputStream("/home/poojan/IdeaProjects/MMTBookingScriptUsingExtentReport/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/TestData/TestConfig.properties");
             prop.load(input);
             input.close();
 
