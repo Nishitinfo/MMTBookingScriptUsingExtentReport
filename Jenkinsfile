@@ -3,11 +3,12 @@ pipeline {
 
     stages {
         
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
+      stage('Build and Test') {
+    steps {
+        // Use 'bat' for Windows command execution
+        bat 'mvn clean test'
         }
+     }
        
     }
 }
