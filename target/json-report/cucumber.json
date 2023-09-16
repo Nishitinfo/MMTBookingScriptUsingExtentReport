@@ -1,0 +1,334 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-16T06:35:39.330Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1506818000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.before()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify user is redirected to makeMyTrip Home Page",
+        "description": "",
+        "id": "user-checking-the-trip-details-on-makemytrip;verify-user-is-redirected-to-makemytrip-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 67579200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2993318300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is redirected to the makeMyTrip link",
+            "match": {
+              "location": "Pages.HomeScreen.accessingMakeMyTrip()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/div/div[2]/div/div\"}\n  (Session info: headless chrome\u003d116.0.5845.188)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITSBOOK\u0027, ip: \u0027192.168.29.223\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\NITSSH~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 501483792e27d96899618e3e2034d937\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[1]/div/div[2]/div/div}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat MakeMyTrip_org.Utils.isElementpresent(Utils.java:14)\r\n\tat MakeMyTrip_org.Page.HomePage.verifySearchFeature(HomePage.java:35)\r\n\tat Pages.HomeScreen.checkSearchFeature(HomeScreen.java:23)\r\n\tat ✽.User is able access the search feature(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:5)\r\n",
+              "duration": 10058366100,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User is able access the search feature",
+            "match": {
+              "location": "Pages.HomeScreen.checkSearchFeature()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Verify User should be redirected to makeMyTrip Home page",
+            "match": {
+              "location": "Pages.HomeScreen.redirectedToMkeMyTRipHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-16T06:35:54.038Z",
+        "before": [
+          {
+            "result": {
+              "duration": 899520100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify user selecting a trip with specific data",
+        "description": "",
+        "id": "user-checking-the-trip-details-on-makemytrip;verify-user-selecting-a-trip-with-specific-data",
+        "after": [
+          {
+            "result": {
+              "duration": 36152600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 468174500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is checking the round trip",
+            "match": {
+              "location": "Pages.HomeScreen.checkingTripOnMakeMyTrip()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchFrameException: no such frame\n  (Session info: headless chrome\u003d116.0.5845.188)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITSBOOK\u0027, ip: \u0027192.168.29.223\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\NITSSH~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63796}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 3d4b8169283a35c567bc22535087390e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)\r\n\tat MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)\r\n\tat Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)\r\n\tat ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:10)\r\n",
+              "duration": 3036473900,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User entering the trip data to search",
+            "match": {
+              "location": "Pages.HomeScreen.enteringTripDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Verify User is able to book data with entered details",
+            "match": {
+              "location": "Pages.HomeScreen.verifyingTripResult()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-16T06:35:58.488Z",
+        "before": [
+          {
+            "result": {
+              "duration": 878840000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.before()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify user booking a trip with Traveller and Class",
+        "description": "",
+        "id": "user-checking-the-trip-details-on-makemytrip;verify-user-booking-a-trip-with-traveller-and-class",
+        "after": [
+          {
+            "result": {
+              "duration": 34809800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 319702000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is redirected to the makeMyTrip link",
+            "match": {
+              "location": "Pages.HomeScreen.accessingMakeMyTrip()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[5]/label/p[1]\"}\n  (Session info: headless chrome\u003d116.0.5845.188)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITSBOOK\u0027, ip: \u0027192.168.29.223\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\NITSSH~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63827}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: eb2121754d5424256e40ed2877e99926\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[5]/label/p[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)\r\n\tat MakeMyTrip_org.Page.HomePage.selectTravelerAndClass(HomePage.java:63)\r\n\tat Pages.HomeScreen.enteringTripTravellerDetails(HomeScreen.java:55)\r\n\tat ✽.User entering the traveller and class data(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:16)\r\n",
+              "duration": 10033733900,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "User entering the traveller and class data",
+            "match": {
+              "location": "Pages.HomeScreen.enteringTripTravellerDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Verify User is able to book data with entered traveller and class details",
+            "match": {
+              "location": "Pages.HomeScreen.verifyingTravellerAndClassResult()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-16T06:36:09.767Z",
+        "before": [
+          {
+            "result": {
+              "duration": 893517000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.before()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify user booking a trip with updated Traveller and class",
+        "description": "",
+        "id": "user-checking-the-trip-details-on-makemytrip;verify-user-booking-a-trip-with-updated-traveller-and-class",
+        "after": [
+          {
+            "result": {
+              "duration": 57946900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Pages.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 232881600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is redirected to the makeMyTrip link",
+            "match": {
+              "location": "Pages.HomeScreen.accessingMakeMyTrip()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchFrameException: no such frame\n  (Session info: headless chrome\u003d116.0.5845.188)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITSBOOK\u0027, ip: \u0027192.168.29.223\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\NITSSH~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: d84711c9d5296b128cf3d2aea9a11091\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)\r\n\tat MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)\r\n\tat Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)\r\n\tat ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:21)\r\n",
+              "duration": 3037938000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "User entering the trip data to search",
+            "match": {
+              "location": "Pages.HomeScreen.enteringTripDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Verify User is able to book data with entered details",
+            "match": {
+              "location": "Pages.HomeScreen.verifyingTripResult()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User entering the traveller and class data",
+            "match": {
+              "location": "Pages.HomeScreen.enteringTripTravellerDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Verify User is able to book data with entered traveller and class details",
+            "match": {
+              "location": "Pages.HomeScreen.verifyingTravellerAndClassResult()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User updating the traveller and class data",
+            "match": {
+              "location": "Pages.HomeScreen.updatingTripDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Verify User is able to book trip and redirected to review page",
+            "match": {
+              "location": "Pages.HomeScreen.verifyingTripBooking()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User checking the trip details on makeMyTrip",
+    "description": "",
+    "id": "user-checking-the-trip-details-on-makemytrip",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HomePage.feature",
+    "tags": []
+  }
+]
