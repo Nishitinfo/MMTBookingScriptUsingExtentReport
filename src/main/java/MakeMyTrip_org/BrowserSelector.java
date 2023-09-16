@@ -37,6 +37,7 @@ public class BrowserSelector extends BaseClass {
             options.addArguments("--safebrowsing-disable-download-protection");
             options.addArguments("--test-type");
             options.addArguments("--incognito");
+            options.addArguments("--headless");
             options.addArguments("--disable-extensions");
             options.addArguments("disable-infobars");
             options.addArguments("--deleteAll-Cookies");
