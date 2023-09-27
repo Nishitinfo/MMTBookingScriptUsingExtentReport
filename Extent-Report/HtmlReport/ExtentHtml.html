@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sept 16, 2023 11:39:32 am</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 27, 2023 11:29:43 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -126,12 +126,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='25%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='75%'>
-                    3</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    4</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -146,14 +146,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='37%'>
-                    <span class='strong'>6</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='25%'>
+                    <span class='strong'>4</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='18%'>
-                    3</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='43%'>
-                    7</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    4</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>
+                    8</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -177,7 +177,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>User checking the trip details on makeMyTrip</span>
-						<span class='test-time'>Sept 16, 2023 11:39:33 am</span>
+						<span class='test-time'>Sep 27, 2023 11:29:44 AM</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -188,11 +188,11 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='Pass'>
+<div class='scenario node' test-id='2' status='Fail'>
 
-	<span class='duration right label'>00 00 06.116</span>
+	<span class='duration right label'>00 00 15.326</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify user is redirected to makeMyTrip Home Page</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify user is redirected to makeMyTrip Home Page</div>
 	</div>
 	
 	
@@ -203,21 +203,50 @@
 
 
 		</li>
-		<li test-id='5' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Pages.HomeScreen.checkSearchFeature())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User is able access the search feature</div>
+		<li test-id='5' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(Pages.HomeScreen.checkSearchFeature())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User is able access the search feature</div>
 
 
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div"}
+  (Session info: headless chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 221e723be2132e5e9479b30e199746d6
+*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at MakeMyTrip_org.Utils.isElementpresent(Utils.java:14)
+	at MakeMyTrip_org.Page.HomePage.verifySearchFeature(HomePage.java:35)
+	at Pages.HomeScreen.checkSearchFeature(HomeScreen.java:23)
+	at ?.User is able access the search feature(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:5)
+</textarea>
 		</li>
-		<li test-id='6' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Pages.HomeScreen.redirectedToMkeMyTRipHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify User should be redirected to makeMyTrip Home page</div>
+		<li test-id='6' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(Pages.HomeScreen.redirectedToMkeMyTRipHomePage())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Verify User should be redirected to makeMyTrip Home page</div>
 
 
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='8' status='Fail'>
 
-	<span class='duration right label'>00 00 17.151</span>
+	<span class='duration right label'>00 00 04.052</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify user selecting a trip with specific data</div>
 	</div>
@@ -234,32 +263,27 @@
 			<div class="step-name" title="(Pages.HomeScreen.enteringTripDetails())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User entering the trip data to search</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='webklipper-publisher-widget-container-notification-close-div']/i"}
-  (Session info: chrome=116.0.5845.188)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: headless chrome=116.0.5845.188)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
-*** Element info: {Using=xpath, value=//a[@id='webklipper-publisher-widget-container-notification-close-div']/i}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c507610040d999cc5f769bd456272d92
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
-	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:41)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
+	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)
 	at Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)
-	at ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:10)
+	at ?.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:10)
 </textarea>
 		</li>
 		<li test-id='12' class='node then Skip' status='Skip'>
@@ -272,7 +296,7 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 </div>
 <div class='scenario node' test-id='14' status='Fail'>
 
-	<span class='duration right label'>00 00 14.445</span>
+	<span class='duration right label'>00 00 11.131</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify user booking a trip with Traveller and Class</div>
 	</div>
@@ -290,17 +314,18 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 
 
 					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[5]/label/p[1]"}
-  (Session info: chrome=116.0.5845.188)
+  (Session info: headless chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e5277b3e0e7229d6813a9a58d44447a
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f51c17bb826d029fa2ed4d1c2a11e06
 *** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[5]/label/p[1]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -314,7 +339,7 @@ Session ID: 5e5277b3e0e7229d6813a9a58d44447a
 	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
 	at MakeMyTrip_org.Page.HomePage.selectTravelerAndClass(HomePage.java:63)
 	at Pages.HomeScreen.enteringTripTravellerDetails(HomeScreen.java:55)
-	at ✽.User entering the traveller and class data(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:16)
+	at ?.User entering the traveller and class data(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:16)
 </textarea>
 		</li>
 		<li test-id='18' class='node then Skip' status='Skip'>
@@ -327,7 +352,7 @@ Session ID: 5e5277b3e0e7229d6813a9a58d44447a
 </div>
 <div class='scenario node' test-id='20' status='Fail'>
 
-	<span class='duration right label'>00 00 18.114</span>
+	<span class='duration right label'>00 00 04.191</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify user booking a trip with updated Traveller and class</div>
 	</div>
@@ -344,32 +369,27 @@ Session ID: 5e5277b3e0e7229d6813a9a58d44447a
 			<div class="step-name" title="(Pages.HomeScreen.enteringTripDetails())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User entering the trip data to search</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='webklipper-publisher-widget-container-notification-close-div']/i"}
-  (Session info: chrome=116.0.5845.188)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: headless chrome=116.0.5845.188)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f83ff57e167b86fc2ab74c2e3e09701
-*** Element info: {Using=xpath, value=//a[@id='webklipper-publisher-widget-container-notification-close-div']/i}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60533}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d401e1f2c91699182cdaf2cf4b2bdae6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
-	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:41)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
+	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)
 	at Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)
-	at ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:21)
+	at ?.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:21)
 </textarea>
 		</li>
 		<li test-id='24' class='node then Skip' status='Skip'>
@@ -449,7 +469,7 @@ Session ID: 9f83ff57e167b86fc2ab74c2e3e09701
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -463,21 +483,22 @@ Session ID: 9f83ff57e167b86fc2ab74c2e3e09701
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sept 16, 2023 11:39:43 am</td>
-										<td class='linked' test-id='11'>And User entering the trip data to search</td>
+										<td>Sep 27, 2023 11:29:49 AM</td>
+										<td class='linked' test-id='5'>And User is able access the search feature</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='webklipper-publisher-widget-container-notification-close-div']/i"}
-  (Session info: chrome=116.0.5845.188)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div"}
+  (Session info: headless chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
-*** Element info: {Using=xpath, value=//a[@id='webklipper-publisher-widget-container-notification-close-div']/i}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 221e723be2132e5e9479b30e199746d6
+*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -488,29 +509,30 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
-	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:41)
-	at Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)
-	at ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:10)
+	at MakeMyTrip_org.Utils.isElementpresent(Utils.java:14)
+	at MakeMyTrip_org.Page.HomePage.verifySearchFeature(HomePage.java:35)
+	at Pages.HomeScreen.checkSearchFeature(HomeScreen.java:23)
+	at ?.User is able access the search feature(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:5)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>Sept 16, 2023 11:40:00 am</td>
+										<td>Sep 27, 2023 11:30:04 AM</td>
 										<td class='linked' test-id='17'>And User entering the traveller and class data</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='webklipper-publisher-widget-container-notification-close-div']/i"}
-  (Session info: chrome=116.0.5845.188)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div"}
+  (Session info: headless chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
-*** Element info: {Using=xpath, value=//a[@id='webklipper-publisher-widget-container-notification-close-div']/i}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 221e723be2132e5e9479b30e199746d6
+*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -521,43 +543,87 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
-	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:41)
+	at MakeMyTrip_org.Utils.isElementpresent(Utils.java:14)
+	at MakeMyTrip_org.Page.HomePage.verifySearchFeature(HomePage.java:35)
+	at Pages.HomeScreen.checkSearchFeature(HomeScreen.java:23)
+	at ?.User is able access the search feature(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:5)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchFrameException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 27, 2023 11:30:00 AM</td>
+										<td class='linked' test-id='11'>And User entering the trip data to search</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: headless chrome=116.0.5845.188)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c507610040d999cc5f769bd456272d92
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
+	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)
 	at Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)
-	at ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:10)
+	at ?.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:10)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>Sept 16, 2023 11:40:15 am</td>
+										<td>Sep 27, 2023 11:30:15 AM</td>
 										<td class='linked' test-id='23'>And User entering the trip data to search</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='webklipper-publisher-widget-container-notification-close-div']/i"}
-  (Session info: chrome=116.0.5845.188)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: headless chrome=116.0.5845.188)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NITSBOOK', ip: '192.168.29.223', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'NITSBOOK', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
-*** Element info: {Using=xpath, value=//a[@id='webklipper-publisher-widget-container-notification-close-div']/i}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\NITSSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c507610040d999cc5f769bd456272d92
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MakeMyTrip_org.Utils.clickOnElement(Utils.java:20)
-	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:41)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
+	at MakeMyTrip_org.Page.HomePage.enterTripData(HomePage.java:40)
 	at Pages.HomeScreen.enteringTripDetails(HomeScreen.java:40)
-	at ✽.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/MakeMyTrip_AutomationScript_ExtentReport_Final/Crossbrowser_ExtentReport/src/test/resources/features/HomePage.feature:10)
+	at ?.User entering the trip data to search(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:10)
 </textarea>
 										</td>
 									</tr>
@@ -601,19 +667,19 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sept 16, 2023 11:39:32 am</div>
+					<div class='panel-lead'>Sep 27, 2023 11:29:43 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sept 16, 2023 11:40:29 am</div>
+			 		<div class='panel-lead'>Sep 27, 2023 11:30:19 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 56.561</div>
+					<div class='panel-lead'>00 00 35.416</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -660,27 +726,27 @@ Session ID: 6371ce87bb1e36fb04fa84a326f5a5b0
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 4,
-				passChild: 1,
-				failChild: 3,
+				passChild: 0,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 16,
-				passGrandChild: 6,
-				failGrandChild: 3,
+				passGrandChild: 4,
+				failGrandChild: 4,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 7,
+				skipGrandChild: 8,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "User checking the trip details on makeMyTrip":55.856
+			        "User checking the trip details on makeMyTrip":34.73
 			};
 		</script>
 		
