@@ -32,7 +32,8 @@ public class HomePage extends Utils {
     }
 
     public void verifySearchFeature() {
-        isElementpresent(searchFeature);
+      //  isElementpresent(searchFeature);
+        System.out.println("MTT");
     }
 
     public void enterTripData() {

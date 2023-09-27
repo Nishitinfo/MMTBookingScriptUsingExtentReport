@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Runners.RunTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.868 s - in Runners.RunTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.442 s - in Runners.RunTest

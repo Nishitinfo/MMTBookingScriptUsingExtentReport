@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-09-27T06:13:56.312Z",
+        "start_timestamp": "2023-09-27T06:30:11.111Z",
         "before": [
           {
             "result": {
-              "duration": 1248107700,
+              "duration": 1226940100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 49807400,
+              "duration": 54891500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 601365700,
+              "duration": 572835500,
               "status": "passed"
             },
             "line": 4,
@@ -47,9 +47,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/div/div[2]/div/div\"}\n  (Session info: headless chrome\u003d116.0.5845.188)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITSBOOK\u0027, ip: \u0027192.168.0.103\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\NITSSH~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 490145cc8bf9e98ab9bc67e145160901\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[1]/div/div[2]/div/div}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat MakeMyTrip_org.Utils.isElementpresent(Utils.java:14)\r\n\tat MakeMyTrip_org.Page.HomePage.verifySearchFeature(HomePage.java:35)\r\n\tat Pages.HomeScreen.checkSearchFeature(HomeScreen.java:23)\r\n\tat ✽.User is able access the search feature(file:///C:/Users/Nits%20Sheth/IdeaProjects/MMTBookingScriptUsingExtentReport_Jenkins/src/test/resources/features/HomePage.feature:5)\r\n",
-              "duration": 10042977800,
-              "status": "failed"
+              "duration": 1109700,
+              "status": "passed"
             },
             "line": 5,
             "name": "User is able access the search feature",
@@ -60,8 +59,8 @@
           },
           {
             "result": {
-              "duration": 1000900,
-              "status": "skipped"
+              "duration": 10496600,
+              "status": "passed"
             },
             "line": 6,
             "name": "Verify User should be redirected to makeMyTrip Home page",
